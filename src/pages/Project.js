@@ -1,10 +1,11 @@
-import * as React from 'react';
-import ImageList from '@mui/material/ImageList';
-import ImageListItem from '@mui/material/ImageListItem';
-import ImageListItemBar from '@mui/material/ImageListItemBar';
-import ListSubheader from '@mui/material/ListSubheader';
-import IconButton from '@mui/material/IconButton';
-import InfoIcon from '@mui/icons-material/Info';
+import React,{Component} from 'react';
+import Project from "./Project";
+
+//@material-ui/core
+import Grid from '@material-ui/core/Grid';
+
+import List from '@material-ui/core/List';
+import Slide from '@material-ui/core/Slide';
 
 
 

@@ -8,7 +8,7 @@ import InfoIcon from '@mui/icons-material/Info';
 
 
 
-export default function Portfolio() {
+export default function Project() {
   return (
     <ImageList sx={{ width: 500, height: 450 }}>
       <ImageListItem key="Subheader" cols={2}>
