@@ -1,4 +1,4 @@
-https://mui.com/material-ui/react-app-bar/
+// https://mui.com/material-ui/react-app-bar/
 import * as React from "react";
 // Styling imports
 import {
@@ -13,23 +13,24 @@ import {
   Button,
   Tooltip,
   MenuItem,
-  Paper,
 } from "@mui/material";
 
 import AdbIcon from "@mui/icons-material/Adb";
 import MenuIcon from "@mui/icons-material/Menu";
 
+
 const pages = ['Portfolio', 'Projects', 'Blog'];
 const settings = ['Github', 'LinkedIn', 'Resume', 'Contact'];
 
-export default function Navigation = () => {
-  const [anchorElNav, setAnchorElNav] = React.useState<null | HTMLElement>(null);
-  const [anchorElUser, setAnchorElUser] = React.useState<null | HTMLElement>(null);
 
-  const handleOpenNavMenu = (event: React.MouseEvent<HTMLElement>) => {
+export default function Navigation(props) {
+  const [anchorElNav, setAnchorElNav] = React.useState(null);
+  const [anchorElUser, setAnchorElUser] = React.useState(null);
+
+  const handleOpenNavMenu = (event) => {
     setAnchorElNav(event.currentTarget);
   };
-  const handleOpenUserMenu = (event: React.MouseEvent<HTMLElement>) => {
+  const handleOpenUserMenu = (event) => {
     setAnchorElUser(event.currentTarget);
   };
 
@@ -165,4 +166,6 @@ export default function Navigation = () => {
     </AppBar>
   );
 };
+
+
 

@@ -20,4 +20,4 @@ export default function Footer(props) {
   );
 }
 
-//might need to add git hub link https://github.com/Taylor25et
+// might need to add git hub link https://github.com/Taylor25et

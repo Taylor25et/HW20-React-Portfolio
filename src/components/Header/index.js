@@ -1,3 +1,5 @@
+import React from "react";
+import { Link, Typography } from "@mui/material";
 
 export default function Header({ setPage }) {
   return (
