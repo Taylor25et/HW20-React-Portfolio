@@ -5,7 +5,7 @@ export default function Header({ setPage }) {
   return (
     <header>
       <h1>Hello</h1>
-      <nav>
+      {/* <nav>
         <a href="#about" onClick={() => setPage("about")}>
           About
         </a>
@@ -18,7 +18,7 @@ export default function Header({ setPage }) {
         <a href="#contact" onClick={() => setPage("contact")}>
           Contact
         </a>
-      </nav>
+      </nav> */}
     </header>
   );
 }

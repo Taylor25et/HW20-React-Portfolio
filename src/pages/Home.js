@@ -74,12 +74,7 @@ export default function Home(props) {
                 <Container maxWidth="md" className="userInfo">
                   {/* <img></img>  */}
                   <h3 align="center">Welcome to my portfolio</h3>
-                  <p>
-                    for
-                  </p>
-                  <p>
-                    notes
-                  </p>
+                 
                   <h3>Your Dating Profile:</h3>
                   <ul>
                     <li>Name: Brian</li>
