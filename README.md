@@ -1,70 +1,81 @@
-# Getting Started with Create React App
+# HW20-React-Portfolio
+[Deployed Portfolio Link](https://radiant-basin-40892.herokuapp.com/)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+![gitHubLicense](https://img.shields.io/badge/License-MIT-green.svg)
 
-## Available Scripts
+![](public/assets/images/home.png)
+## Description
+This application is a CMS-style blog site where developers can publish their blog posts and comment on other developers’ posts. This app follows the MVC paradigm in its architectural structure, using Handlebars.js as the templating language, Sequelize as the ORM, and the express-session npm package for authentication.<br>
 
-In the project directory, you can run:
+- Link to deployed application: [Deployed Portfolio](https://justanothertxteditor.herokuapp.com/)
+- Link to GitHub Repository: [Repository Webpage](https://github.com/Taylor25et/HW20-React-Portfolio)
 
-### `npm start`
+![](public/assets/images/posts.png)
+### User Story
+```md
+AS AN employer looking for candidates with experience building single-page applications
+I WANT to view a potential employee's deployed React portfolio of work samples
+SO THAT I can assess whether they're a good candidate for an open position
+```
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Table of Contents
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- [Installation](#installation)
+- [Usage](#usage)
+- [License](#license)
+- [Contributing](#contributing)
+- [Tests](#tests)
+- [Questions](#questions)
 
-### `npm test`
+## Installation 
+![](public/assets/images/login.png)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+After cloning the repo you will run the following command in your terminal.
+Dependencies Installation Command:
+```md
+npm install express-handlebars mysql2 sequelize dotenv bcrypt express-session connect-session-sequelize express
+```
+After that is complete you will run:
+```md
+npm run seeds
+```
+Followed by
+```md
+npm run start
+```
+then you will paste the following link into your web browser: https://localhost:3003
 
-### `npm run build`
+## Usage
+![](public/assets/images/posts.png)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+This application's folder structure follows the Model-View-Controller paradigm. The express-handlebars package was used to implement Handlebars.js for my Views folder. The MySQL2 and Sequelize packages were used to connect to a MySQL database for my Models. I created an Express.js API for my Controllers. The dotenv package was to used to handle environment variables and the bcrypt package to hash passwords. The express-session and connect-session-sequelize packages were implimented for authentication.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+#### Dependencies
+- [MySQL2](https://www.npmjs.com/package/mysql2) 
+- [Sequelize](https://www.npmjs.com/package/sequelize)
+- [Express](https://www.npmjs.com/package/express)
+- [dotenv package](https://www.npmjs.com/package/dotenv)
+- [connect-session-sequelize](https://www.npmjs.com/package/connect-session-sequelize)
+- [bcrypt package](https://www.npmjs.com/package/bcrypt) 
+- [express-handlebars](https://www.npmjs.com/package/express-handlebars)
+- [express-session](https://www.npmjs.com/package/express-session)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## License
+This project is covered under the MIT license. 
+![gitHubLicense](https://img.shields.io/badge/License-MIT-green.svg)
 
-### `npm run eject`
+## Contributing
+This project would not have been possible without the contributions credited in the links below.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+[Create React App Docs on GitHub Pages](https://create-react-app.dev/docs/deployment/#github-pages)
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Tests
+For testing opportunities please clone the repo and make adjustments to your code when needed.
 
-## Learn More
+## Questions
+Please feel free to contact me with any questions or suggestions either on my GitHub account or via email.
+* GitHub: https://github.com/taylor25et
+* E-Mail: taylor25et@gmail.com
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
