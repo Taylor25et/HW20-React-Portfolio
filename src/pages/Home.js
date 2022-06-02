@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import { Link } from "react-router-dom";
 // import React, { useState } from "react";
 import Header from "../components/Header";
@@ -57,7 +57,7 @@ export default function Home(props) {
         style={{ backgroundColor: "hsla(0, 100%, 90%, 0.8" }}
         sx={{ mt: 0 }}
       />
-      <div className={classes.root}>
+      <div >
         <Typography color="white">
           <CssBaseline />
           {/* User Info Section */}
@@ -73,7 +73,7 @@ export default function Home(props) {
               <Box>
                 <Container maxWidth="md" className="userInfo">
                   {/* <img></img>  */}
-                  <h3 align="center">Welcome to Date-A-Base!</h3>
+                  <h3 align="center">Welcome to my portfolio</h3>
                   <p>
                     for
                   </p>

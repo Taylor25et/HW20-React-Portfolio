@@ -1,4 +1,10 @@
 import React from 'react';
+import ImageList from '@mui/material/ImageList';
+import ImageListItem from '@mui/material/ImageListItem';
+import ImageListItemBar from '@mui/material/ImageListItemBar';
+import ListSubheader from '@mui/material/ListSubheader';
+import IconButton from '@mui/material/IconButton';
+import InfoIcon from '@mui/icons-material/Info';
 // import React,{Component} from 'react';
 // import Project from "../components/Project";
 
@@ -73,9 +79,9 @@ const itemData = [
     //https://github.com/Taylor25et/HW5-Day-Planner
   },
   {
-    img: 'https://images.unsplash.com/photo-1444418776041-9c7e33cc5a9c',
-    title: 'Travel App',
-    author: '@nolanissac',
+    img: 'https://github.com/Taylor25et/Final-Project-Dating-Sim/raw/main/client/public/assets/images/GamePageScreenshot.png',
+    title: 'Dating Sim',
+    author: 'https://github.com/Taylor25et/Final-Project-Dating-Sim',
     cols: 2,
   },
 //   {
