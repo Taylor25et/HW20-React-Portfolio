@@ -1,31 +1,10 @@
-// import React, { useState } from "react";
-
-
-// import Home from "./pages/Home";
-// import About from "./pages/About";
-// import Portfolio from "./pages/Portfolio";
-// // import Navigation from "./components/Navigation";
-// import Footer from "./components/Footer";
-
-
-// export default function App(props) {
-//   const [page, setPage]= useState('Home');
-//   return (
-//     <div >
-//       {/* <Header setpage={setPage}/> */}
-//       {/* <Navigation setpage={setPage}/> */}
-//       <Portfolio page={page}/>
-//       <About page={page}/>
-//       <Home page={page}/>
-//       <Footer setpage={setPage}/>
-//     </div>
-    
-//   );
-// }
-
-import Header from "./components/Header/header";
-import Navigation from "./components/Navigation/navigation";
+import Header from "./components/Header";
+import Navigation from "./components/Navigation";
+import Footer from "./components/Footer";
 import Home from "./components/Home";
+// import Portfolio from "./components/Portfolio";
+// import Contact from "./components/Contact";
+// import About from "./components/About";
 import { useState } from "react";
 
 function App() {
@@ -36,6 +15,10 @@ function App() {
       <Header setPage={setPage}/>
       <Navigation setPage={setPage}/>
       <Home page={page}/>
+      {/* <About page={page}/>
+      <Portfolio page={page}/>
+      <Contact page={page}/> */}
+      <Footer sx={{ mt: 5 }} />
     </div>
   );
 }
