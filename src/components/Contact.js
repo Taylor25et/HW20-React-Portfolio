@@ -12,16 +12,18 @@ export default function Contact() {
 }
 
   return (
-    <div class="container">
+    <section className="container">
       <h1>Contact Me</h1>
       <form
         target="_blank"
         action="https://formsubmit.co/taylor25et@gmail.com"
         method="POST"
+        className="justify-content-center" 
+        id="contact-form"
       >
         <div class="form-group">
           <div class="form-row">
-            <div class="col">
+            <div className="mt-5">
               <input
                 type="text"
                 name="name"
@@ -30,7 +32,7 @@ export default function Contact() {
                 required
               />
             </div>
-            <div class="col">
+            <div className="mt-5">
               <input
                 type="email"
                 name="email"
@@ -41,7 +43,7 @@ export default function Contact() {
             </div>
           </div>
         </div>
-        <div class="form-group">
+        <div className="mt-5">
           <textarea
             placeholder="Your Message"
             class="form-control"
@@ -50,10 +52,10 @@ export default function Contact() {
             required
           ></textarea>
         </div>
-        <button type="submit" onBlur={handleChange} class="btn btn-lg btn-dark btn-block">
+        <button type="submit" onSubmit={handleSubmit} class="btn btn-lg btn-dark btn-block">
           Submit Form
         </button>
       </form>
-    </div>
+    </section>
   );
 }
