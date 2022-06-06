@@ -130,7 +130,6 @@ export default function Header() {
           </Typography>
           <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
             {pages.map((page) => (
-              
               <Button
                 key={page}
                 onClick={handleCloseNavMenu}
@@ -138,7 +137,6 @@ export default function Header() {
               >
                 {page}
               </Button>
-             
             ))}
           </Box>
 
