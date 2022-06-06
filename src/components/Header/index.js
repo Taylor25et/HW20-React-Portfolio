@@ -143,7 +143,7 @@ export default function Header() {
           <Box sx={{ flexGrow: 0 }}>
             <Tooltip title="Open settings">
               <IconButton onClick={handleOpenUserMenu} sx={{ p: 0 }}>
-                <Avatar alt="Remy Sharp" src="/static/images/avatar/2.jpg" />
+                <Avatar alt="Taylor Thomspon" src="https://taylor25et.github.io/Updated_Portfolio_Page/assets/pictures/avatar.jpg" />
               </IconButton>
             </Tooltip>
             <Menu

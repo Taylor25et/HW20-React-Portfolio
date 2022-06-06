@@ -1,8 +1,7 @@
 import React,{Component} from 'react';
 
-import Footer from './Footer';
-import Project from './Project';
 
+import Project from './Project';
 import Grid from '@material-ui/core/Grid';
 import List from '@material-ui/core/List';
 
@@ -53,8 +52,6 @@ class Portfolio extends Component {
                 />
             </Grid>
             </List>
-      <Footer sx={{ mt: 5 }} />
-
     </ThemeProvider>
   );
  }

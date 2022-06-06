@@ -63,11 +63,11 @@ export default function About(props) {
   return (
     <Card sx={{ maxWidth: 1000 }}>
       <CardHeader
-        avatar={
-          <Avatar sx={{ bgcolor: red[500] }} aria-label="recipe">
-            R
-          </Avatar>
-        }
+        // avatar={
+        //   <Avatar sx={{ p: 8 }} src="https://taylor25et.github.io/Updated_Portfolio_Page/assets/pictures/avatar.jpg" aria-label="photo of me">
+        //     R
+        //   </Avatar>
+        // }
         action={
           <IconButton aria-label="settings">
             <MoreVertIcon />
@@ -78,8 +78,8 @@ export default function About(props) {
       />
       <CardMedia
         component="img"
-        height="194"
-        image="/static/images/cards/paella.jpg"
+        height="500"
+        image="https://github.com/Taylor25et/Updated_Portfolio_Page/blob/main/assets/pictures/avatar.jpg?raw=true"
         alt="Paella dish"
       />
       <CardContent>
