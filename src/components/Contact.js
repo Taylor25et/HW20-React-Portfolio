@@ -7,13 +7,16 @@ export default function Contact() {
     message: "",
   });
   const { name, email, message } = formState;
+  function handleSubmit(e) {
+    e.preventDefault();
+}
 
   return (
     <div class="container">
-      <h1>FormSubmit Demo</h1>
+      <h1>Contact Me</h1>
       <form
         target="_blank"
-        action="https://formsubmit.co/your@email.com"
+        action="https://formsubmit.co/taylor25et@gmail.com"
         method="POST"
       >
         <div class="form-group">
@@ -47,7 +50,7 @@ export default function Contact() {
             required
           ></textarea>
         </div>
-        <button type="submit" class="btn btn-lg btn-dark btn-block">
+        <button type="submit" onBlur={handleChange} class="btn btn-lg btn-dark btn-block">
           Submit Form
         </button>
       </form>
