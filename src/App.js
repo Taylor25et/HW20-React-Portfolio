@@ -24,6 +24,7 @@
 // }
 
 import Header from "./components/Header/header";
+import Navigation from "./components/Navigation/navigation";
 import Home from "./components/Home";
 import { useState } from "react";
 
@@ -33,6 +34,7 @@ function App() {
   return (
     <div >
       <Header setPage={setPage}/>
+      <Navigation setPage={setPage}/>
       <Home page={page}/>
     </div>
   );
