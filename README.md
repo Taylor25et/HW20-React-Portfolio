@@ -33,22 +33,22 @@ SO THAT I can assess whether they're a good candidate for an open position
 After cloning the repo you will run the following command in your terminal.
 Dependencies Installation Command:
 ```md
-npm install express-handlebars mysql2 sequelize dotenv bcrypt express-session connect-session-sequelize express
+npm i --force
 ```
 After that is complete you will run:
 ```md
-npm run seeds
+npm run build
 ```
 Followed by
 ```md
 npm run start
 ```
-then you will paste the following link into your web browser: https://localhost:3003
+then you will paste the following link into your web browser: https://localhost:3000
 
 ## Usage
 ![](public/assets/images/posts.png)
 
-This application's folder structure follows the Model-View-Controller paradigm. The express-handlebars package was used to implement Handlebars.js for my Views folder. The MySQL2 and Sequelize packages were used to connect to a MySQL database for my Models. I created an Express.js API for my Controllers. The dotenv package was to used to handle environment variables and the bcrypt package to hash passwords. The express-session and connect-session-sequelize packages were implimented for authentication.
+This portfolio uses React. My objective is to use React skills, which will help set me apart from other developers and let employers know more about me. 
 
 
 ## License
@@ -62,8 +62,6 @@ This project would not have been possible without the contributions credited in 
 [MUI Icons](https://mui.com/material-ui/material-icons/)
 [MUI Nav Bar](https://mui.com/material-ui/react-app-bar/#app-bar-with-responsive-menu)
 <!-- [MUI Image Slider](https://github.com/alielkhateeb/mui-image-slider) -->
-
-
 
 ## Tests
 For testing opportunities please clone the repo and make adjustments to your code when needed.
