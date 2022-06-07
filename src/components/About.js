@@ -30,17 +30,18 @@ import CardMedia from "@mui/material/CardMedia";
 import CardContent from "@mui/material/CardContent";
 import CardActions from "@mui/material/CardActions";
 import Collapse from "@mui/material/Collapse";
-import Avatar from "@mui/material/Avatar";
 import IconButton from "@mui/material/IconButton";
-import Typography from "@mui/material/Typography";
-import { red } from "@mui/material/colors";
-// import ShareIcon from '@mui/icons-material/Share';
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
-import MoreVertIcon from "@mui/icons-material/MoreVert";
-
 import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import ChromeReaderModeIcon from "@mui/icons-material/ChromeReaderMode";
+import Typography from "@mui/material/Typography";
+import "../App.css";
+
+// import Avatar from "@mui/material/Avatar";
+// import { red } from "@mui/material/colors";
+// import MoreVertIcon from "@mui/icons-material/MoreVert";
+// import ShareIcon from '@mui/icons-material/Share';
 
 const ExpandMore = styled((props) => {
   const { expand, ...other } = props;
@@ -59,93 +60,110 @@ export default function About(props) {
   const handleExpandClick = () => {
     setExpanded(!expanded);
   };
+  const styles = {
+    largeIcon: {
+      width: 60,
+      height: 60,
+    },
+    list: {
+      textAlign: "left",
+    }
+  };
 
   return (
-    <Card sx={{ maxWidth: 1000 }}>
-      <CardHeader
-        // avatar={
-        //   <Avatar sx={{ p: 8 }} src="https://taylor25et.github.io/Updated_Portfolio_Page/assets/pictures/avatar.jpg" aria-label="photo of me">
-        //     R
-        //   </Avatar>
-        // }
-        action={
-          <IconButton aria-label="settings">
-            <MoreVertIcon />
-          </IconButton>
-        }
-        title="About Me"
-        // subheader="September 14, 2016"
-      />
-      <CardMedia
-        component="img"
-        height="500"
-        image="https://github.com/Taylor25et/Updated_Portfolio_Page/blob/main/assets/pictures/avatar.jpg?raw=true"
-        alt="Paella dish"
-      />
-      <CardContent>
-        <Typography variant="body2" color="text.secondary">
-          A junior Full Stack Developer developer who attended the coding bootcamp
-          program at the University of Washington.
-
-          Let's work together!
-        </Typography>
-      </CardContent>
-      <CardActions disableSpacing>
-        <IconButton
-          component="a"
-          href="https://github.com/Taylor25et"
-          aria-label="My GitHub Page"
-        >
-          <GitHubIcon />
-        </IconButton>
-        <IconButton
-          component="a"
-          href="https://www.linkedin.com/in/taylor-thompson-545073197"
-          aria-label="My LinkedIn Page"
-        >
-          <LinkedInIcon />
-        </IconButton>
-        <IconButton
-          component="a"
-          href="https://docs.google.com/document/d/1m2fAXdY5F4NJlIx-xmr_2Ya04ypjBr80/edit?usp=sharing&ouid=104548712702009630910&rtpof=true&sd=true"
-          aria-label="My Resume"
-        >
-          <ChromeReaderModeIcon />
-        </IconButton>
-        <ExpandMore
-          expand={expanded}
-          onClick={handleExpandClick}
-          aria-expanded={expanded}
-          aria-label="show more"
-        >
-          <ExpandMoreIcon />
-        </ExpandMore>
-      </CardActions>
-      <Collapse in={expanded} timeout="auto" unmountOnExit>
+    <div
+      style={{ display: "flex", justifyContent: "center", textAlign: "center" }}
+    >
+      <Card sx={{ maxWidth: 1000 }}>
+        <CardHeader
+          // avatar={
+          //   <Avatar sx={{ p: 8 }} src="https://taylor25et.github.io/Updated_Portfolio_Page/assets/pictures/avatar.jpg" aria-label="photo of me">
+          //     R
+          //   </Avatar>
+          // }
+          // action={
+          //   <IconButton aria-label="settings">
+          //     <MoreVertIcon />
+          //   </IconButton>
+          // }
+          title="About Me"
+          subheader="Full Stack Developer"
+        />
+        <CardMedia
+          component="img"
+          height="500"
+          image="https://github.com/Taylor25et/Updated_Portfolio_Page/blob/main/assets/pictures/avatar.jpg?raw=true"
+          alt="Paella dish"
+        />
         <CardContent>
-          <Typography paragraph><strong>SUMMARY OF QUALIFICATIONS</strong></Typography>
-        <ul className="list">
-            <li>Fluid understanding of multiple programming languages, including
-            React, JavaScript, HTML, and CSS.</li>
-            <li>Excellent communications skills. Adept at building strong working
-            relationships with coworkers and management.</li>
-            <li>Talented problem solver able to think “outside the box.”</li>
-            <li>Proven background leading teams in stressful, deadline-oriented
-            environments.</li>
-            <li>Dry Cough</li>
-        </ul>
-        <Typography paragraph><strong>Languages: </strong>HTML5, CSS3, JavaScript, jQuery, Express.js, React.js, Node.js, MongoDB, MySQL</Typography>
-          <Typography paragraph>
-            f
-          </Typography>
-          <Typography paragraph>
-            g
-          </Typography>
-          <Typography>
-            9
+          <Typography variant="body2" color="text.secondary">
+            A junior Full Stack Developer developer who attended the coding
+            bootcamp program at the University of Washington. Let's work
+            together!
           </Typography>
         </CardContent>
-      </Collapse>
-    </Card>
+        <CardActions disableSpacing>
+          <IconButton
+            component="a"
+            href="https://github.com/Taylor25et"
+            aria-label="My GitHub Page"
+          >
+            <GitHubIcon style={styles.largeIcon} />
+          </IconButton>
+          <IconButton
+            component="a"
+            href="https://www.linkedin.com/in/taylor-thompson-545073197"
+            aria-label="My LinkedIn Page"
+          >
+            <LinkedInIcon style={styles.largeIcon} />
+          </IconButton>
+          <IconButton
+            component="a"
+            href="https://docs.google.com/document/d/1m2fAXdY5F4NJlIx-xmr_2Ya04ypjBr80/edit?usp=sharing&ouid=104548712702009630910&rtpof=true&sd=true"
+            aria-label="My Resume"
+          >
+            <ChromeReaderModeIcon style={styles.largeIcon} />
+          </IconButton>
+          <ExpandMore
+            expand={expanded}
+            onClick={handleExpandClick}
+            aria-expanded={expanded}
+            aria-label="show more"
+          >
+            <ExpandMoreIcon />
+          </ExpandMore>
+        </CardActions>
+        <Collapse in={expanded} timeout="auto" unmountOnExit>
+          <CardContent>
+            <Typography paragraph>
+              <strong>SUMMARY OF QUALIFICATIONS</strong>
+            </Typography>
+            <ul style={styles.list} className="list">
+              <li>
+                Fluid understanding of multiple programming languages, including
+                React, JavaScript, HTML, and CSS.
+              </li>
+              <li>
+                Excellent communications skills. Adept at building strong
+                working relationships with coworkers and management.
+              </li>
+              <li>Talented problem solver able to think “outside the box.”</li>
+              <li>
+                Proven background leading teams in stressful, deadline-oriented
+                environments.
+              </li>
+              
+            </ul>
+            <Typography paragraph>
+              <strong>Languages: </strong>HTML5, CSS3, JavaScript, jQuery,
+              Express.js, React.js, Node.js, MongoDB, MySQL
+            </Typography>
+            <Typography paragraph></Typography>
+            <Typography paragraph></Typography>
+            <Typography></Typography>
+          </CardContent>
+        </Collapse>
+      </Card>
+    </div>
   );
 }

@@ -197,7 +197,7 @@ class Project extends Component {
                 target="blank"
                 disabled={!isHosted}
               >
-                View Deployed Site
+                View Deployed Website
               </Button>
               <Button
                 fullWidth
