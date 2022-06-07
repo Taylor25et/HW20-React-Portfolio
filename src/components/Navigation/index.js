@@ -14,7 +14,7 @@ import MenuItem from "@mui/material/MenuItem";
 import BedtimeIcon from "@mui/icons-material/Bedtime";
 
 const pages = ["Portfolio", "About", "Contact", "Resume"];
-const settings = ["Profile", "Account", "Dashboard", "Logout"];
+
 
 export default function Navigation({ setPage }) {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
@@ -177,11 +177,6 @@ export default function Navigation({ setPage }) {
               open={Boolean(anchorElUser)}
               onClose={handleCloseUserMenu}
             >
-              {settings.map((setting) => (
-                <MenuItem key={setting} onClick={handleCloseUserMenu}>
-                  <Typography textAlign="center">{setting}</Typography>
-                </MenuItem>
-              ))}
             </Menu>
           </Box>
         </Toolbar>

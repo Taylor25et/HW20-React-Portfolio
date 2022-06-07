@@ -7,8 +7,15 @@ export default function Contact() {
     message: "",
   });
   const { name, email, message } = formState;
+  const [errorMessage, setErrorMessage] = useState("");
   function handleSubmit(e) {
     e.preventDefault();
+    setFormState({ ...formState, [e.target.name]: e.target.value })
+  }
+  function handleChange(e) {
+    if (!errorMessage) {
+      setFormState({ ...formState, [e.target.name]: e.target.value });
+    }
   }
   const styles = {
     main: {
