@@ -11,6 +11,7 @@
     "@testing-library/jest-dom": "^5.16.4",
     "@testing-library/react": "^13.2.0",
     "@testing-library/user-event": "^13.5.0",
+    "build": "^0.1.4",
     "concurrently": "^7.2.1",
     "emailjs-com": "^3.2.0",
     "postcss": "^8.4.14",
@@ -20,6 +21,7 @@
     "react-hook-form": "^7.31.3",
     "react-router-dom": "^6.2.1",
     "react-scripts": "^5.0.1",
+    "run": "^1.4.0",
     "sass": "^1.52.1",
     "web-vitals": "^2.1.4"
   },
