@@ -1,22 +1,19 @@
-import React, { useState } from "react";
+import React from "react";
 
 export default function Contact() {
-  const [formState, setFormState] = useState({
-    name: "",
-    email: "",
-    message: "",
-  });
-  const { name, email, message } = formState;
-  const [errorMessage, setErrorMessage] = useState("");
+  // const [formState] = useState({
+  //   name: "",
+  //   email: "",
+  //   message: "",
+  // });
+  // const { name, email, message } = formState;
+  // function handleSubmit(e) {
+  //   e.preventDefault();
+  // }
   function handleSubmit(e) {
     e.preventDefault();
-    setFormState({ ...formState, [e.target.name]: e.target.value })
   }
-  function handleChange(e) {
-    if (!errorMessage) {
-      setFormState({ ...formState, [e.target.name]: e.target.value });
-    }
-  }
+  
   const styles = {
     main: {
       justifyContent: "center",
@@ -33,6 +30,7 @@ export default function Contact() {
         method="POST"
         className="justify-content-center"
         id="contact-form"
+        style={styles.main}
       >
         <div class="form-group">
           <div class="form-row">
