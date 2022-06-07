@@ -1,7 +1,11 @@
 import React, { Component } from "react";
-//styling imports
 import CloseIcon from "@mui/icons-material/Close";
-import { withStyles } from "@material-ui/core/styles";
+
+//old working with style package
+// import { withStyles } from "@material-ui/core/styles";
+
+
+import { withStyles } from "@mui/material/styles";
 import {
   Avatar,
   Grow,

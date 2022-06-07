@@ -1,16 +1,18 @@
 import * as React from "react";
-import AppBar from "@mui/material/AppBar";
-import Box from "@mui/material/Box";
-import Toolbar from "@mui/material/Toolbar";
-import IconButton from "@mui/material/IconButton";
-import Typography from "@mui/material/Typography";
-import Menu from "@mui/material/Menu";
+import {
+  AppBar,
+  Box,
+  Toolbar,
+  IconButton,
+  Menu,
+  Typography,
+  Container,
+  Avatar,
+  Button,
+  Tooltip,
+  MenuItem,
+} from "@mui/material";
 import MenuIcon from "@mui/icons-material/Menu";
-import Container from "@mui/material/Container";
-import Avatar from "@mui/material/Avatar";
-import Button from "@mui/material/Button";
-import Tooltip from "@mui/material/Tooltip";
-import MenuItem from "@mui/material/MenuItem";
 import BedtimeIcon from "@mui/icons-material/Bedtime";
 
 const pages = ["Portfolio", "About", "Contact", "Resume"];
@@ -97,9 +99,7 @@ export default function Navigation({ setPage }) {
                       setPage("Contact");
                     } else if (page === "Resume") {
                       handleCloseNavMenu();
-                      setPage(
-                        "https://docs.google.com/document/d/1m2fAXdY5F4NJlIx-xmr_2Ya04ypjBr80/edit?usp=sharing&ouid=104548712702009630910&rtpof=true&sd=true"
-                      );
+                      setPage("Resume");
                     } else {
                       handleCloseNavMenu();
                       setPage("About");
