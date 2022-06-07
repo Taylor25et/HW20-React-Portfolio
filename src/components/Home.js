@@ -5,13 +5,13 @@ import Portfolio from "./Portfolio";
 
 export default function Main({ page }) {
   const currentpage = () => {
-    if (page === "about") {
-      return <About />;
-    } else if (page === "Contact") {
+    if (page === "Contact") {
       return <Contact />;
     } else if (page === "Portfolio") { 
       return <Portfolio />;
-    } else { }
+    } else{
+       return <About />;
+    }
   };
   return <>{currentpage()}</>;
 }

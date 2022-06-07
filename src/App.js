@@ -1,4 +1,4 @@
-import Header from "./components/Header";
+// import Header from "./components/Header";
 import Navigation from "./components/Navigation";
 import Footer from "./components/Footer";
 import Home from "./components/Home";
@@ -12,12 +12,9 @@ function App() {
 
   return (
     <div >
-      <Header setPage={setPage}/>
+      {/* <Header setPage={setPage}/> */}
       <Navigation setPage={setPage}/>
       <Home page={page}/>
-      {/* <About page={page}/>
-      <Portfolio page={page}/>
-      <Contact page={page}/> */}
       <Footer sx={{ mt: 5 }} />
     </div>
   );
