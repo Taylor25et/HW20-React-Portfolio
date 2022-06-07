@@ -11,7 +11,7 @@ export default function Footer(props) {
       {...props}
     >
       {"Copyright © "}{" "}
-      <Link color="inherit" href="https://mui.com/">
+      <Link color="inherit" href="https://github.com/Taylor25et">
         MIT License
       </Link>{" "}
       {new Date().getFullYear()}
@@ -20,4 +20,3 @@ export default function Footer(props) {
   );
 }
 
-// might need to add git hub link https://github.com/Taylor25et

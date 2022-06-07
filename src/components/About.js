@@ -67,7 +67,7 @@ export default function About(props) {
     },
     list: {
       textAlign: "left",
-    }
+    },
   };
 
   return (
@@ -75,20 +75,7 @@ export default function About(props) {
       style={{ display: "flex", justifyContent: "center", textAlign: "center" }}
     >
       <Card sx={{ maxWidth: 1000 }}>
-        <CardHeader
-          // avatar={
-          //   <Avatar sx={{ p: 8 }} src="https://taylor25et.github.io/Updated_Portfolio_Page/assets/pictures/avatar.jpg" aria-label="photo of me">
-          //     R
-          //   </Avatar>
-          // }
-          // action={
-          //   <IconButton aria-label="settings">
-          //     <MoreVertIcon />
-          //   </IconButton>
-          // }
-          title="About Me"
-          subheader="Full Stack Developer"
-        />
+        <CardHeader title="About Me" subheader="Full Stack Developer" />
         <CardMedia
           component="img"
           height="500"
@@ -96,7 +83,13 @@ export default function About(props) {
           alt="Paella dish"
         />
         <CardContent>
-          <Typography variant="body2" color="text.secondary">
+          <Typography variant="body5" color="text.secondary">
+            <strong>
+              “Programmer: A machine that turns coffee into code.”
+            </strong>
+          </Typography>
+          <Typography>...</Typography>
+          <Typography variant="body4" color="text.secondary">
             A junior Full Stack Developer developer who attended the coding
             bootcamp program at the University of Washington. Let's work
             together!
@@ -152,7 +145,6 @@ export default function About(props) {
                 Proven background leading teams in stressful, deadline-oriented
                 environments.
               </li>
-              
             </ul>
             <Typography paragraph>
               <strong>Languages: </strong>HTML5, CSS3, JavaScript, jQuery,

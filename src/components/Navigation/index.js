@@ -11,16 +11,13 @@ import Avatar from "@mui/material/Avatar";
 import Button from "@mui/material/Button";
 import Tooltip from "@mui/material/Tooltip";
 import MenuItem from "@mui/material/MenuItem";
-import AdbIcon from "@mui/icons-material/Adb";
+import BedtimeIcon from '@mui/icons-material/Bedtime';
 
-import Portfolio from "../Portfolio";
-import About from "../About";
-import Contact from "../Contact";
 
 const pages = ["Portfolio", "About", "Contact"];
 const settings = ["Profile", "Account", "Dashboard", "Logout"];
 
-export default function Header({ setPage }) {
+export default function Navigation({ setPage }) {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
   const [anchorElUser, setAnchorElUser] = React.useState(null);
 
@@ -43,7 +40,7 @@ export default function Header({ setPage }) {
     <AppBar position="static">
       <Container maxWidth="xl">
         <Toolbar disableGutters>
-          <AdbIcon sx={{ display: { xs: "none", md: "flex" }, mr: 1 }} />
+          <BedtimeIcon sx={{ display: { xs: "none", md: "flex" }, mr: 1 }} />
           <Typography
             variant="h6"
             noWrap
@@ -59,13 +56,12 @@ export default function Header({ setPage }) {
               textDecoration: "none",
             }}
           >
-            LOGO
+            Taylor Thompson
           </Typography>
 
           <Box sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}>
             <IconButton
               size="large"
-              aria-label="account of current user"
               aria-controls="menu-appbar"
               aria-haspopup="true"
               onClick={handleOpenNavMenu}
@@ -112,7 +108,7 @@ export default function Header({ setPage }) {
               ))}
             </Menu>
           </Box>
-          <AdbIcon sx={{ display: { xs: "flex", md: "none" }, mr: 1 }} />
+          <BedtimeIcon sx={{ display: { xs: "flex", md: "none" }, mr: 1 }} />
           <Typography
             variant="h5"
             noWrap
@@ -129,7 +125,7 @@ export default function Header({ setPage }) {
               textDecoration: "none",
             }}
           >
-            LOGO
+            TMac
           </Typography>
           <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}>
             {pages.map((page) => (

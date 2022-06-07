@@ -1,55 +1,61 @@
-import React from "react";
-import { useForm } from "react-hook-form";
-import { init, sendForm } from "emailjs-com";
-
-init("OQad9KeZOv91N1mFN");
+import React, { useState } from "react";
 
 export default function Contact() {
-  const { register, handleSubmit, watch, errors } = useForm();
-  const onSubmit = (data) => {
-    // console.log(data);
-    generateContactNumber();
-    sendForm("default_service", "YOUR_TEMPLATE_ID", "#form").then(
-      function (response) {
-        console.log("SUCCESS!", response.status, response.text);
-      },
-      function (error) {
-        console.log("FAILED...", error);
-      }
-    );
-  };
-  
-  const message = watch("message") || "";
-  const messageCharsLeft = 2000 - message.length;
+  const [formState, setFormState] = useState({
+    name: "",
+    email: "",
+    message: "",
+  });
+  const { name, email, message } = formState;
+  function handleSubmit(e) {
+    e.preventDefault();
+}
 
   return (
-    <div className="contact">
-      <h1 className="contact-me">Contact Me</h1>
-      <form id="form" className="topBefore" onSubmit={handleSubmit(onSubmit)}>
-        <input
-          type="text"
-          name="name"
-          id="name"
-          placeholder="Name"
-          {...register("name", { required: true })}
-        />
-        <input
-          type="email"
-          name="email"
-          id="email"
-          placeholder="Email"
-          {...register("email", { required: true })}
-        />
-        <textarea
-          name="message"
-          id="email"
-          placeholder="Message"
-          maxLength="2000"
-          {...register("message", { required: true })}
-        />
-        <p className="message-chars-left">{messageCharsLeft}</p>
-        <input type="submit" id="submit" value="Send" />
+    <section className="container">
+      <h1>Contact Me</h1>
+      <form
+        target="_blank"
+        action="https://formsubmit.co/taylor25et@gmail.com"
+        method="POST"
+        className="justify-content-center" 
+        id="contact-form"
+      >
+        <div class="form-group">
+          <div class="form-row">
+            <div className="mt-5">
+              <input
+                type="text"
+                name="name"
+                class="form-control"
+                placeholder="Full Name"
+                required
+              />
+            </div>
+            <div className="mt-5">
+              <input
+                type="email"
+                name="email"
+                class="form-control"
+                placeholder="Email Address"
+                required
+              />
+            </div>
+          </div>
+        </div>
+        <div className="mt-5">
+          <textarea
+            placeholder="Your Message"
+            class="form-control"
+            name="message"
+            rows="10"
+            required
+          ></textarea>
+        </div>
+        <button type="submit" onSubmit={handleSubmit} class="btn btn-lg btn-dark btn-block">
+          Submit Form
+        </button>
       </form>
-    </div>
+    </section>
   );
 }
