@@ -1,27 +1,3 @@
-// export default function About(){
-//     return (
-//         <Section>
-//         <h1>About Me</h1>
-//             <img src="./assets/pictures/avatar.jpg" alt="A avatar photo of me">
-//             <Section>
-//                 <h2>TAYLOR THOMPSON  Back-end Developer</h2>
-//                 <p>Welcome to my portfolio.</p>
-//                 <br>
-//                 <p>Languages: HTML, CSS, JavaScript</p>
-//                 <p>Email: taylor25et@gmail.com</p>
-//                 <p>Total Experience: 1 Year</p>
-//                 <p>I am a junior software developer who attended the coding bootcamp program at the University of Washington</p>
-//                 <br>
-//                 <br>
-//                 <a href="https://www.linkedin.com/in/taylor-thompson-545073197">Check Out My LinkedIn!</a>
-//                 <a href="https://github.com/Taylor25et">Check Out My GitHub!</a>
-//                 <a href="https://docs.google.com/document/d/1m2fAXdY5F4NJlIx-xmr_2Ya04ypjBr80/edit?usp=sharing&ouid=104548712702009630910&rtpof=true&sd=true">Check Out My Resume!</a>
-//             </Section>
-//         </Section>
-
-//     )
-// }
-
 import * as React from "react";
 import { styled } from "@mui/material/styles";
 import Card from "@mui/material/Card";
@@ -36,12 +12,7 @@ import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import ChromeReaderModeIcon from "@mui/icons-material/ChromeReaderMode";
 import Typography from "@mui/material/Typography";
-import "../App.css";
 
-// import Avatar from "@mui/material/Avatar";
-// import { red } from "@mui/material/colors";
-// import MoreVertIcon from "@mui/icons-material/MoreVert";
-// import ShareIcon from '@mui/icons-material/Share';
 
 const ExpandMore = styled((props) => {
   const { expand, ...other } = props;

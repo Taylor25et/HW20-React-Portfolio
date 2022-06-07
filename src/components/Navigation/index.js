@@ -15,7 +15,6 @@ import BedtimeIcon from "@mui/icons-material/Bedtime";
 
 const pages = ["Portfolio", "About", "Contact", "Resume"];
 
-
 export default function Navigation({ setPage }) {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
   const [anchorElUser, setAnchorElUser] = React.useState(null);
@@ -98,7 +97,9 @@ export default function Navigation({ setPage }) {
                       setPage("Contact");
                     } else if (page === "Resume") {
                       handleCloseNavMenu();
-                      setPage("https://docs.google.com/document/d/1m2fAXdY5F4NJlIx-xmr_2Ya04ypjBr80/edit?usp=sharing&ouid=104548712702009630910&rtpof=true&sd=true");
+                      setPage(
+                        "https://docs.google.com/document/d/1m2fAXdY5F4NJlIx-xmr_2Ya04ypjBr80/edit?usp=sharing&ouid=104548712702009630910&rtpof=true&sd=true"
+                      );
                     } else {
                       handleCloseNavMenu();
                       setPage("About");
@@ -176,8 +177,7 @@ export default function Navigation({ setPage }) {
               }}
               open={Boolean(anchorElUser)}
               onClose={handleCloseUserMenu}
-            >
-            </Menu>
+            ></Menu>
           </Box>
         </Toolbar>
       </Container>

@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-
 //styling imports
 import CloseIcon from "@mui/icons-material/Close";
 import { withStyles } from "@material-ui/core/styles";
@@ -155,7 +154,7 @@ class Project extends Component {
                   target="blank"
                   disabled={!isHosted}
                 >
-                  View Hosted Example
+                  View Deployed Website
                 </Button>
               </div>
             </DialogContent>

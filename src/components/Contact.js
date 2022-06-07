@@ -13,7 +13,7 @@ export default function Contact() {
   function handleSubmit(e) {
     e.preventDefault();
   }
-  
+
   const styles = {
     main: {
       justifyContent: "center",

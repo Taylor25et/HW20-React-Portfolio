@@ -1,10 +1,7 @@
 import React,{Component} from 'react';
-
-
 import Project from './Project';
 import Grid from '@material-ui/core/Grid';
 import List from '@material-ui/core/List';
-
 import { createTheme, ThemeProvider } from "@mui/material/styles";
 
 class Portfolio extends Component {
