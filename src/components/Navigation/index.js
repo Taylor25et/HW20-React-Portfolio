@@ -141,6 +141,9 @@ export default function Navigation({ setPage }) {
                   } else if (page === "Contact") {
                     handleCloseNavMenu();
                     setPage("Contact");
+                  } else if (page === "Resume") {
+                    handleCloseNavMenu();
+                    setPage("Resume");
                   } else {
                     handleCloseNavMenu();
                     setPage("About");
