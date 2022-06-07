@@ -1,5 +1,5 @@
 # HW20-React-Portfolio
-[Deployed Portfolio Link](https://reactportfoliotaylorthompon.herokuapp.com/)
+[Deployed Portfolio Link](https://taylor25et.github.io/HW20-React-Portfolio/)
 
 ![gitHubLicense](https://img.shields.io/badge/License-MIT-green.svg)
 
@@ -7,7 +7,7 @@
 ## Description
 <br>
 
-- Link to deployed application: [Deployed Portfolio](https://reactportfoliotaylorthompon.herokuapp.com/)
+- Link to deployed application: [Deployed Portfolio](https://taylor25et.github.io/HW20-React-Portfolio/)
 - Link to GitHub Repository: [Repository Webpage](https://github.com/Taylor25et/HW20-React-Portfolio)
 
 ![](https://github.com/Taylor25et/HW20-React-Portfolio/blob/main/public/images/portfoliopg.png?raw=true)
