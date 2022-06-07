@@ -16,7 +16,7 @@ export default function Contact() {
 
   const styles = {
     main: {
-      justifyContent: "center",
+      textAlign: "center",
       height: 600,
     },
   };

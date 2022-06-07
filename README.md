@@ -3,14 +3,14 @@
 
 ![gitHubLicense](https://img.shields.io/badge/License-MIT-green.svg)
 
-![](public/assets/images/home.png)
+![](https://github.com/Taylor25et/HW20-React-Portfolio/blob/main/public/images/aboutme.png?raw=true)
 ## Description
 <br>
 
 - Link to deployed application: [Deployed Portfolio](https://justanothertxteditor.herokuapp.com/)
 - Link to GitHub Repository: [Repository Webpage](https://github.com/Taylor25et/HW20-React-Portfolio)
 
-![](public/assets/images/posts.png)
+![](https://github.com/Taylor25et/HW20-React-Portfolio/blob/main/public/images/portfoliopg.png?raw=true)
 ### User Story
 ```md
 AS AN employer looking for candidates with experience building single-page applications
@@ -28,7 +28,7 @@ SO THAT I can assess whether they're a good candidate for an open position
 - [Questions](#questions)
 
 ## Installation 
-![](public/assets/images/login.png)
+![](https://github.com/Taylor25et/HW20-React-Portfolio/blob/main/public/images/mobile2.png?raw=true)
 
 After cloning the repo you will run the following command in your terminal.
 Dependencies Installation Command:
@@ -46,7 +46,7 @@ npm run start
 then you will paste the following link into your web browser: https://localhost:3000
 
 ## Usage
-![](public/assets/images/posts.png)
+![](https://github.com/Taylor25et/HW20-React-Portfolio/blob/main/public/images/moble1.png?raw=true)
 
 This portfolio uses React. My objective is to use React skills, which will help set me apart from other developers and let employers know more about me. 
 
